@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Jobs\SendCampaignEmail;
 use Inertia\Inertia;
@@ -47,5 +48,13 @@ class CampaignController extends Controller
         }
 
         return redirect()->route('campaigns.index')->with('success', 'Campaign queued!');
+    }
+
+    public function show(Campaign $campaign)
+    {
+        $campaign->load('recipients.contact');
+        return Inertia::render('Campaigns/Show', [
+            'campaign' => $campaign,
+        ]);
     }
 }

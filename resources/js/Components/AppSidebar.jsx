@@ -21,6 +21,16 @@ const items = [
     url: "/dashboard",
     icon: Home,
   },
+  {
+    title: "Campaigns",
+    url: "/campaigns",
+    icon: Inbox,
+  },
+  {
+    title: "Contacts",
+    url: "/contacts",
+    icon: User,
+  },
 ]
 
 export function AppSidebar() {

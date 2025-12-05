@@ -22,6 +22,7 @@ Route::get('/contacts', [ContactController::class, 'index'])->name('contacts.ind
 Route::get('/campaigns', [CampaignController::class, 'index'])->name('campaigns.index');
 Route::get('/campaigns/create', [CampaignController::class, 'create'])->name('campaigns.create');
 Route::post('/campaigns', [CampaignController::class, 'store'])->name('campaigns.store');
+Route::get('/campaigns/{campaign}', [CampaignController::class, 'show'])->name('campaigns.show');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
