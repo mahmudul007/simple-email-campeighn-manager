@@ -45,5 +45,5 @@ This project allows you to manage contacts, create email campaigns, and track em
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/mahmudul007/simple-campaign-manager.git
+git clone https://github.com/mahmudul007/simple-email-campeighn-manager.git
 cd simple-campaign-manager
