@@ -128,16 +128,6 @@ export default function Welcome({ auth, status, canResetPassword }) {
                                     Don't have an account? Register
                                 </Link>
                             </div>
-
-                            <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-                                <h3 className="font-semibold mb-2 dark:text-white">Features:</h3>
-                                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                                    <li>✓ Contact List</li>
-                                    <li>✓ Campaign List</li>
-                                    <li>✓ Email Campaign</li>
-                                    <li>✓ Queue-based email sending</li>
-                                </ul>
-                            </div>
                         </div>
                     )}
                 </div>

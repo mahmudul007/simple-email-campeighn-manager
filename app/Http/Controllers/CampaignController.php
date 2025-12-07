@@ -14,7 +14,9 @@ class CampaignController extends Controller
 {
     public function index()
     {
-        $campaigns = Campaign::with('recipients.contact')->get();
+        $campaigns = Campaign::with('recipients.contact')
+            ->orderBy('created_at', 'desc')
+            ->get();
         return Inertia::render('Campaigns/Index', [
             'campaigns' => $campaigns,
         ]);
