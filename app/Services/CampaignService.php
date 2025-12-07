@@ -9,6 +9,7 @@ class CampaignService
 {
     public function sendCampaignEmail($data)
     {
+
         $campaign = Campaign::create([
             'subject' => $data['subject'],
             'body' => $data['body'],
