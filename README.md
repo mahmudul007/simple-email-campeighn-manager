@@ -81,7 +81,7 @@ Dedicated Request classes (`StoreCampaignRequest`) provide:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/mahmudul007/simple-email-campeighn-manager.git
+git clone https://github.com/mahmudul007/simple-email-campaign-manager.git
 cd simple-campaign-manager
 php artisan composer:install
 php artisan key:generate
